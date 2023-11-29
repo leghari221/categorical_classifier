@@ -36,4 +36,4 @@ if st.button('Classify Document'):
     vector = vectorizer.transform([document])
     # Predict the category of the document
     prediction = clf.predict(vector)
-    st.write('Category: ', clf.target_names[prediction[0]])
+    st.write('Category: ', newsgroups_train.target_names[prediction[0]])
